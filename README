@@ -1,0 +1,25 @@
+# Installation guide:
+- Install SUMO through https://sumo.dlr.de/docs/Downloads.php
+- Install Python dependencies: `pip install -r requirements.txt` (We used Python 3.12.6)
+- Alternatively install the main packages individually(This should be enough):
+- pip install sumo-rl
+- pip install stable-baselines3
+
+# You can run the models through the individual files:
+# Follow comments for instructions on running to avoid overwriting current results
+- `baselines.py`: Run and evaluate the sequential, random, and greedy baselines
+- `dqn.py`: Train and evaluate the DQN model
+- `genetic.py`: Train and evaluate the genetic algorithm
+- `plot_eval.py`: Plot the results of the models with comparisons
+- `display.py`: Display the results of the models with gui
+
+## Acknowledgements
+This project uses SUMO-RL. We would like to acknowledge the authors:
+@misc{sumorl,
+    author = {Lucas N. Alegre},
+    title = {{SUMO-RL}},
+    year = {2019},
+    publisher = {GitHub},
+    journal = {GitHub repository},
+    howpublished = {\url{https://github.com/LucasAlegre/sumo-rl}},
+}
